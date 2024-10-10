@@ -1,4 +1,4 @@
-variable "env" {
+variable "region" {
   description = "The AWS region to deploy the cluster into (e.g. eu-central-1)"
   type        = string
   default     = ""
