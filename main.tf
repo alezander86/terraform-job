@@ -1,10 +1,5 @@
 terraform {
   required_version = "1.5.7"
-}
-
-provider "aws" {
-  region = var.region
-}
 
   required_providers {
     aws = {
@@ -12,6 +7,13 @@ provider "aws" {
       version = ">= 5.54.1"
     }
 }
+}
+
+provider "aws" {
+  region = var.region
+}
+
+
 
 data "aws_vpcs" "all_vpcs" {}
 
